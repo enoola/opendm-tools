@@ -1,0 +1,224 @@
+POST / HTTP/1.1
+Host: 127.0.0.1:5000
+User-Agent: Go-http-client/1.1
+Content-Length: 1237
+Content-Type: application/json; charset=utf-8
+Accept-Encoding: gzip
+=== JSON Body ===
+{
+  "topic": "mdm.Authenticate",
+  "event_id": "c519e09a-8e18-4986-a771-8ea8cb3d68b3",
+  "created_at": "2025-09-07T14:22:52.736569105Z",
+  "checkin_event": {
+    "udid": "89sd899hkjjkjh8998sd8kkjjkjhds899",
+    "url_params": null,
+    "raw_payload": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHBsaXN0IFBVQkxJQyAiLS8vQXBwbGUvL0RURCBQTElTVCAxLjAvL0VOIiAiaHR0cDovL3d3dy5hcHBsZS5jb20vRFREcy9Qcm9wZXJ0eUxpc3QtMS4wLmR0ZCI+CjxwbGlzdCB2ZXJzaW9uPSIxLjAiPgo8ZGljdD4KCTxrZXk+QnVpbGRWZXJzaW9uPC9rZXk+Cgk8c3RyaW5nPjIwSDM2MDwvc3RyaW5nPgoJPGtleT5JTUVJPC9rZXk+Cgk8c3RyaW5nPjM1IDYwOTYwOSA3MDYyODMgODwvc3RyaW5nPgoJPGtleT5NRUlEPC9rZXk+Cgk8c3RyaW5nPjM1NjA5NjA5NzA2MjgzPC9zdHJpbmc+Cgk8a2V5Pk1lc3NhZ2VUeXBlPC9rZXk+Cgk8c3RyaW5nPkF1dGhlbnRpY2F0ZTwvc3RyaW5nPgoJPGtleT5PU1ZlcnNpb248L2tleT4KCTxzdHJpbmc+MTYuNy4xMTwvc3RyaW5nPgoJPGtleT5Qcm9kdWN0TmFtZTwva2V5PgoJPHN0cmluZz5pUGhvbmUxMCwxPC9zdHJpbmc+Cgk8a2V5PlNlcmlhbE51bWJlcjwva2V5PgoJPHN0cmluZz5GRk1aUEExTkpDNkc8L3N0cmluZz4KCTxrZXk+VG9waWM8L2tleT4KCTxzdHJpbmc+Y29tLmFwcGxlLm1nbXQuRXh0ZXJuYWwuZTVkNjNkMWQtNzMwYi00NDA2LWExYTQtODY2NTY5MjdkMzQ2PC9zdHJpbmc+Cgk8a2V5PlVESUQ8L2tleT4KCTxzdHJpbmc+ZTdmMjBlY2MxYzk1OWVhOGZmYzZiMTJjMjkwMWUwNDU1YmI0OGI4NTwvc3RyaW5nPgo8L2RpY3Q+CjwvcGxpc3Q+Cg=="
+  }
+}
+
+🚨 TRIGGERING ENROLLMENT HOOK: ./hook_triggered_on_Enrollment.sh
+✅ Enrollment hook executed for UDID: unknown
+✅ Hook execution attempted.
+
+=== DECODED raw_payload ===
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildVersion</key>
+	<string>20H360</string>
+	<key>IMEI</key>
+	<string>35 609609 706283 8</string>
+	<key>MEID</key>
+	<string>35609609706283</string>
+	<key>MessageType</key>
+	<string>Authenticate</string>
+	<key>OSVersion</key>
+	<string>16.7.11</string>
+	<key>ProductName</key>
+	<string>iPhone10,1</string>
+	<key>SerialNumber</key>
+	<string>FFMZPA1NJC6G</string>
+	<key>Topic</key>
+	<string>com.apple.mgmt.External.e5d63d1d-730b-4406-a1a4-86656927d346</string>
+	<key>UDID</key>
+	<string>89sd899hkjjkjh8998sd8kkjjkjhds899</string>
+</dict>
+</plist>
+============================
+────────────────────────────
+POST / HTTP/1.1
+Host: 127.0.0.1:5000
+User-Agent: Go-http-client/1.1
+Content-Length: 3532
+Content-Type: application/json; charset=utf-8
+Accept-Encoding: gzip
+=== JSON Body ===
+{
+  "topic": "mdm.TokenUpdate",
+  "event_id": "0fb2839a-b935-4731-ae8b-ad205567d77b",
+  "created_at": "2025-09-07T14:22:52.954595213Z",
+  "checkin_event": {
+    "udid": "89sd899hkjjkjh8998sd8kkjjkjhds899",
+    "url_params": null,
+    "raw_payload": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHBsaXN0IFBVQkxJQyAiLS8vQXBwbGUvL0RURCBQTElTVCAxLjAvL0VOIiAiaHR0cDovL3d3dy5hcHBsZS5jb20vRFREcy9Qcm9wZXJ0eUxpc3QtMS4wLmR0ZCI+CjxwbGlzdCB2ZXJzaW9uPSIxLjAiPgo8ZGljdD4KCTxrZXk+QXdhaXRpbmdDb25maWd1cmF0aW9uPC9rZXk+Cgk8ZmFsc2UvPgoJPGtleT5NZXNzYWdlVHlwZTwva2V5PgoJPHN0cmluZz5Ub2tlblVwZGF0ZTwvc3RyaW5nPgoJPGtleT5QdXNoTWFnaWM8L2tleT4KCTxzdHJpbmc+NjExOUUyNTQtQUE3OC00RDNELUE2OTItNjE5Nzk3Qzg2N0MzPC9zdHJpbmc+Cgk8a2V5PlRva2VuPC9rZXk+Cgk8ZGF0YT4KCS9pOUNUc1Byclh6cWdzNjNQMlZ0Y1Uyb0lqVTBxRmJORDI2MFJNN0lPeXM9Cgk8L2RhdGE+Cgk8a2V5PlRvcGljPC9rZXk+Cgk8c3RyaW5nPmNvbS5hcHBsZS5tZ210LkV4dGVybmFsLmU1ZDYzZDFkLTczMGItNDQwNi1hMWE0LTg2NjU2OTI3ZDM0Njwvc3RyaW5nPgoJPGtleT5VRElEPC9rZXk+Cgk8c3RyaW5nPmU3ZjIwZWNjMWM5NTllYThmZmM2YjEyYzI5MDFlMDQ1NWJiNDhiODU8L3N0cmluZz4KCTxrZXk+VW5sb2NrVG9rZW48L2tleT4KCTxkYXRhPgoJUkVGVVFRQUFCUFJXUlZKVEFBQUFCQUFBQUFWVVdWQkZBQUFBQkFBQUFBSlZWVWxFQUFBQUVPakJSQzNJQzBnNGhsOTQKCVp4cHIzL3BJVFVOTEFBQUFLTW5nTzZMbytodHd6cXZQVTNKUENhY25LMVBxQUE1MzBpY3ZrSHBmT0x2bCtOZ2htODIrCgk3RnBYVWtGUUFBQUFCQUFBQUFGVFFVeFVBQUFBRkh5QWRPNEgvZWpObGJMWDZEOUs1eU1oa3FxcFNWUkZVZ0FBQUFRQQoJQU1OUVZWVkpSQUFBQUJDcjdLcXE5RlZDczRBWWtXOGxPTlUvUTB4QlV3QUFBQVFBQUFBTFYxSkJVQUFBQUFRQUFBQUQKCVMxUlpVQUFBQUFRQUFBQUFWMUJMV1FBQUFDZ3o0TXUveHNqeTFOL0JSR0RoaHVDNVBBU1ZjUU04Zm1rREZCZ2VCR0dmCgl6bFdvb2JjY3NGQ2VWVlZKUkFBQUFCQkM0SHVQeFJWTHJZcVExZGxCK05qSVEweEJVd0FBQUFRQUFBQUtWMUpCVUFBQQoJQUFRQUFBQURTMVJaVUFBQUFBUUFBQUFBVjFCTFdRQUFBQ2h3c3crejdqNWlZbEtja2srQys2ZXlvSk4zbkVMTGthUzgKCVlIVTZ4UlBQYTByK3p1ODNaMnZuVlZWSlJBQUFBQkI5UXVSemlaRkErSjRyaCs0VFFncnhRMHhCVXdBQUFBUUFBQUFKCglWMUpCVUFBQUFBUUFBQUFEUzFSWlVBQUFBQVFBQUFBQVYxQkxXUUFBQUNob2lXRElVVVV4elVoRVIySDNOY3hxQTJobgoJalVOK2tjUTRrMkI2WlMwVUtRcWw1YnByS2cvYVZWVkpSQUFBQUJCN2ttQXgvYnhJZ3A1VzBoTnNhNGd6UTB4QlV3QUEKCUFBUUFBQUFJVjFKQlVBQUFBQVFBQUFBRFMxUlpVQUFBQUFRQUFBQUFWMUJMV1FBQUFDajJiUkZZZ0hxRTB2ZU85YXltCglweUY1TXV5eFZsZTY0MFYrajdRODhjZ0tKRDFwT096RGNZUVlWVlZKUkFBQUFCQ2cwQ0Qvc21GUHY2VFJ4a1l5cDdnVgoJUTB4QlV3QUFBQVFBQUFBSFYxSkJVQUFBQUFRQUFBQURTMVJaVUFBQUFBUUFBQUFBVjFCTFdRQUFBQ2lFaUNXZVptQmQKCTdYTHRJamlUVmtLckNtMjlGekRjR2dRTTJSczJ2MzJBK1lBU1dOa0h2QTZzVlZWSlJBQUFBQkRIWXRvWlpzbEFWNW5RCglhdzVtcDAvM1EweEJVd0FBQUFRQUFBQUdWMUpCVUFBQUFBUUFBQUFEUzFSWlVBQUFBQVFBQUFBQVYxQkxXUUFBQUNqcwoJS1QxTFBGb3IyV21ZNkhONkdmQTAzS0wycG5JbzZyY0FiL3I0R0JndGQwKzRsNkw4QXJGb1ZWVkpSQUFBQUJDK1hYdUUKCVNPUkdjYlhLSVBoRk52WmdRMHhCVXdBQUFBUUFBQUFGVjFKQlVBQUFBQVFBQUFBRFMxUlpVQUFBQUFRQUFBQUFWMUJMCglXUUFBQUNnVXF2dThMa2s3QjFmaGVMSGpNSnRYWWZmS2c4YmxKWjFEbjh4Z3B3alJNZ0V6bVI2OTFuQ09WVlZKUkFBQQoJQUJCeGtjcTdNQ0ZKWHBUODU4VWdqdnpOUTB4QlV3QUFBQVFBQUFBRFYxSkJVQUFBQUFRQUFBQURTMVJaVUFBQUFBUUEKCUFBQUFWMUJMV1FBQUFDanlMV1BpUVZyb01qREF2aDBnUFRVR0dTc3djcUtVNzlKNzhmWmNjSk9PNkxLL1hNRVYvYm1LCglWVlZKUkFBQUFCQi96NUg4Q3o5UE02dEdFbTJHaFV3YVEweEJVd0FBQUFRQUFBQUNWMUpCVUFBQUFBUUFBQUFEUzFSWgoJVUFBQUFBUUFBQUFCVjFCTFdRQUFBQ2lXUlgwc3UvRGRUVzU5QnZCZjdIV2FEdit0VXhITW5UaWErcC9ZMDRlbm4yYkwKCTNhSlQ5UGZQVUVKTFdRQUFBQ0JuRlc4TEZLaHNta2h4TDVSRjQwZUlNc2x6dnRlMnVqZGZQekVEc1VBQmQxVlZTVVFBCglBQUFRd0xmTVRrbHpUOFcrOVlUT0J6VDR1RU5NUVZNQUFBQUVBQUFBQVZkU1FWQUFBQUFFQUFBQUEwdFVXVkFBQUFBRQoJQUFBQUFGZFFTMWtBQUFBb3RiWDBvZWJVcHQ1eFp3dDZsek5SMS9VRmtSblZJUjlWcjBVZFU5RWY3UWJBOWFocW1XbkUKCUZsTkpSMDRBQUFBVTNkTWx2ZDJkTkxEWWJkNjFSU2V2cGtCSDVUaz0KCTwvZGF0YT4KPC9kaWN0Pgo8L3BsaXN0Pgo="
+  }
+}
+
+=== DECODED raw_payload ===
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AwaitingConfiguration</key>
+	<false/>
+	<key>MessageType</key>
+	<string>TokenUpdate</string>
+	<key>PushMagic</key>
+	<string>6119E254-AA78-4D3D-A692-619797C867C3</string>
+	<key>Token</key>
+	<data>
+	/i9CTsPrrXzqgs63P2VtcU2oIjU0qFbND260RM7IOys=
+	</data>
+	<key>Topic</key>
+	<string>com.apple.mgmt.External.e5d63d1d-730b-4406-a1a4-86656927d346</string>
+	<key>UDID</key>
+	<string>89sd899hkjjkjh8998sd8kkjjkjhds899</string>
+	<key>UnlockToken</key>
+	<data>
+	REFUQQAABPRWRVJTAAAABAAAAAVUWVBFAAAABAAAAAJVVUlEAAAAEOjBRC3IC0g4hl94
+	Zxpr3/pITUNLAAAAKMngO6Lo+htwzqvPU3JPCacnK1PqAA530icvkHpfOLvl+Nghm82+
+	7FpXUkFQAAAABAAAAAFTQUxUAAAAFHyAdO4H/ejNlbLX6D9K5yMhkqqpSVRFUgAAAAQA
+	AMNQVVVJRAAAABCr7Kqq9FVCs4AYkW8lONU/Q0xBUwAAAAQAAAALV1JBUAAAAAQAAAAD
+	S1RZUAAAAAQAAAAAV1BLWQAAACgz4Mu/xsjy1N/BRGDhhuC5PASVcQM8fmkDFBgeBGGf
+	zlWoobccsFCeVVVJRAAAABBC4HuPxRVLrYqQ1dlB+NjIQ0xBUwAAAAQAAAAKV1JBUAAA
+	AAQAAAADS1RZUAAAAAQAAAAAV1BLWQAAAChwsw+z7j5iYlKckk+C+6eyoJN3nELLkaS8
+	YHU6xRPPa0r+zu83Z2vnVVVJRAAAABB9QuRziZFA+J4rh+4TQgrxQ0xBUwAAAAQAAAAJ
+	V1JBUAAAAAQAAAADS1RZUAAAAAQAAAAAV1BLWQAAAChoiWDIUUUxzUhER2H3NcxqA2hn
+	jUN+kcQ4k2B6ZS0UKQql5bprKg/aVVVJRAAAABB7kmAx/bxIgp5W0hNsa4gzQ0xBUwAA
+	AAQAAAAIV1JBUAAAAAQAAAADS1RZUAAAAAQAAAAAV1BLWQAAACj2bRFYgHqE0veO9aym
+	pyF5MuyxVle640V+j7Q88cgKJD1pOOzDcYQYVVVJRAAAABCg0CD/smFPv6TRxkYyp7gV
+	Q0xBUwAAAAQAAAAHV1JBUAAAAAQAAAADS1RZUAAAAAQAAAAAV1BLWQAAACiEiCWeZmBd
+	7XLtIjiTVkKrCm29FzDcGgQM2Rs2v32A+YASWNkHvA6sVVVJRAAAABDHYtoZZslAV5nQ
+	aw5mp0/3Q0xBUwAAAAQAAAAGV1JBUAAAAAQAAAADS1RZUAAAAAQAAAAAV1BLWQAAACjs
+	KT1LPFor2WmY6HN6GfA03KL2pnIo6rcAb/r4GBgtd0+4l6L8ArFoVVVJRAAAABC+XXuE
+	SORGcbXKIPhFNvZgQ0xBUwAAAAQAAAAFV1JBUAAAAAQAAAADS1RZUAAAAAQAAAAAV1BL
+	WQAAACgUqvu8Lkk7B1fheLHjMJtXYffKg8blJZ1Dn8xgpwjRMgEzmR691nCOVVVJRAAA
+	ABBxkcq7MCFJXpT858UgjvzNQ0xBUwAAAAQAAAADV1JBUAAAAAQAAAADS1RZUAAAAAQA
+	AAAAV1BLWQAAACjyLWPiQVroMjDAvh0gPTUGGSswcqKU79J78fZccJOO6LK/XMEV/bmK
+	VVVJRAAAABB/z5H8Cz9PM6tGEm2GhUwaQ0xBUwAAAAQAAAACV1JBUAAAAAQAAAADS1RZ
+	UAAAAAQAAAABV1BLWQAAACiWRX0su/DdTW59BvBf7HWaDv+tUxHMnTia+p/Y04enn2bL
+	3aJT9PfPUEJLWQAAACBnFW8LFKhsmkhxL5RF40eIMslzvte2ujdfPzEDsUABd1VVSUQA
+	AAAQwLfMTklzT8W+9YTOBzT4uENMQVMAAAAEAAAAAVdSQVAAAAAEAAAAA0tUWVAAAAAE
+	AAAAAFdQS1kAAAAotbX0oebUpt5xZwt6lzNR1/UFkRnVIR9Vr0UdU9Ef7QbA9ahqmWnE
+	FlNJR04AAAAU3dMlvd2dNLDYbd61RSevpkBH5Tk=
+	</data>
+</dict>
+</plist>
+============================
+────────────────────────────
+POST / HTTP/1.1
+Host: localhost:5000
+User-Agent: curl/8.5.0
+Accept: */*
+Content-Type: application/json
+Content-Length: 158
+=== JSON Body ===
+{
+    "topic": "mdm.Authenticate",
+    "udid": "ABC123",
+    "authenticate_event": {
+      "udid": "ABC123",
+      "raw_payload": "SGVsbG8gV29ybGQh"
+    }
+  }
+
+🚨 TRIGGERING ENROLLMENT HOOK: ./hook_triggered_on_Enrollment.sh
+✅ Enrollment hook executed for UDID: ABC123
+✅ Hook execution attempted.
+
+=== DECODED raw_payload ===
+============================
+────────────────────────────
+POST / HTTP/1.1
+Host: 127.0.0.1:5000
+User-Agent: Go-http-client/1.1
+Content-Length: 813
+Content-Type: application/json; charset=utf-8
+Accept-Encoding: gzip
+=== JSON Body ===
+{
+  "topic": "mdm.CheckOut",
+  "event_id": "06df3c87-fe62-4d39-8f5e-88e7647b26df",
+  "created_at": "2025-09-07T14:26:22.333231442Z",
+  "checkin_event": {
+    "udid": "89sd899hkjjkjh8998sd8kkjjkjhds899",
+    "url_params": null,
+    "raw_payload": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHBsaXN0IFBVQkxJQyAiLS8vQXBwbGUvL0RURCBQTElTVCAxLjAvL0VOIiAiaHR0cDovL3d3dy5hcHBsZS5jb20vRFREcy9Qcm9wZXJ0eUxpc3QtMS4wLmR0ZCI+CjxwbGlzdCB2ZXJzaW9uPSIxLjAiPgo8ZGljdD4KCTxrZXk+TWVzc2FnZVR5cGU8L2tleT4KCTxzdHJpbmc+Q2hlY2tPdXQ8L3N0cmluZz4KCTxrZXk+VG9waWM8L2tleT4KCTxzdHJpbmc+Y29tLmFwcGxlLm1nbXQuRXh0ZXJuYWwuZTVkNjNkMWQtNzMwYi00NDA2LWExYTQtODY2NTY5MjdkMzQ2PC9zdHJpbmc+Cgk8a2V5PlVESUQ8L2tleT4KCTxzdHJpbmc+ZTdmMjBlY2MxYzk1OWVhOGZmYzZiMTJjMjkwMWUwNDU1YmI0OGI4NTwvc3RyaW5nPgo8L2RpY3Q+CjwvcGxpc3Q+Cg=="
+  }
+}
+
+=== DECODED raw_payload ===
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MessageType</key>
+	<string>CheckOut</string>
+	<key>Topic</key>
+	<string>com.apple.mgmt.External.e5d63d1d-730b-4406-a1a4-86656927d346</string>
+	<key>UDID</key>
+	<string>89sd899hkjjkjh8998sd8kkjjkjhds899</string>
+</dict>
+</plist>
+============================
+────────────────────────────
+POST / HTTP/1.1
+Host: 127.0.0.1:5000
+User-Agent: Go-http-client/1.1
+Content-Length: 1237
+Content-Type: application/json; charset=utf-8
+Accept-Encoding: gzip
+=== JSON Body ===
+{
+  "topic": "mdm.Authenticate",
+  "event_id": "e0419a4e-c2dd-4ff1-929c-67f1fbfa8eb0",
+  "created_at": "2025-09-07T14:26:58.528319267Z",
+  "checkin_event": {
+    "udid": "89sd899hkjjkjh8998sd8kkjjkjhds899",
+    "url_params": null,
+    "raw_payload": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHBsaXN0IFBVQkxJQyAiLS8vQXBwbGUvL0RURCBQTElTVCAxLjAvL0VOIiAiaHR0cDovL3d3dy5hcHBsZS5jb20vRFREcy9Qcm9wZXJ0eUxpc3QtMS4wLmR0ZCI+CjxwbGlzdCB2ZXJzaW9uPSIxLjAiPgo8ZGljdD4KCTxrZXk+QnVpbGRWZXJzaW9uPC9rZXk+Cgk8c3RyaW5nPjIwSDM2MDwvc3RyaW5nPgoJPGtleT5JTUVJPC9rZXk+Cgk8c3RyaW5nPjM1IDYwOTYwOSA3MDYyODMgODwvc3RyaW5nPgoJPGtleT5NRUlEPC9rZXk+Cgk8c3RyaW5nPjM1NjA5NjA5NzA2MjgzPC9zdHJpbmc+Cgk8a2V5Pk1lc3NhZ2VUeXBlPC9rZXk+Cgk8c3RyaW5nPkF1dGhlbnRpY2F0ZTwvc3RyaW5nPgoJPGtleT5PU1ZlcnNpb248L2tleT4KCTxzdHJpbmc+MTYuNy4xMTwvc3RyaW5nPgoJPGtleT5Qcm9kdWN0TmFtZTwva2V5PgoJPHN0cmluZz5pUGhvbmUxMCwxPC9zdHJpbmc+Cgk8a2V5PlNlcmlhbE51bWJlcjwva2V5PgoJPHN0cmluZz5GRk1aUEExTkpDNkc8L3N0cmluZz4KCTxrZXk+VG9waWM8L2tleT4KCTxzdHJpbmc+Y29tLmFwcGxlLm1nbXQuRXh0ZXJuYWwuZTVkNjNkMWQtNzMwYi00NDA2LWExYTQtODY2NTY5MjdkMzQ2PC9zdHJpbmc+Cgk8a2V5PlVESUQ8L2tleT4KCTxzdHJpbmc+ZTdmMjBlY2MxYzk1OWVhOGZmYzZiMTJjMjkwMWUwNDU1YmI0OGI4NTwvc3RyaW5nPgo8L2RpY3Q+CjwvcGxpc3Q+Cg=="
+  }
+}
+
+🚨 TRIGGERING ENROLLMENT HOOK: ./hook_triggered_on_Enrollment.sh
+✅ Enrollment hook executed for UDID: unknown
+✅ Hook execution attempted.
+
+=== DECODED raw_payload ===
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildVersion</key>
+	<string>20H360</string>
+	<key>IMEI</key>
+	<string>35 609609 706283 8</string>
+	<key>MEID</key>
+	<string>35609609706283</string>
+	<key>MessageType</key>
+	<string>Authenticate</string>
+	<key>OSVersion</key>
+	<string>16.7.11</string>
+	<key>ProductName</key>
+	<string>iPhone10,1</string>
+	<key>SerialNumber</key>
+	<string>FFMZPA1NJC6G</string>
+	<key>Topic</key>
+	<string>com.apple.mgmt.External.e5d63d1d-730b-4406-a1a4-86656927d346</string>
+	<key>UDID</key>
+	<string>89sd899hkjjkjh8998sd8kkjjkjhds899</string>
+</dict>
+</plist>
+============================
+────────────────────────────

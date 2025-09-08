@@ -1,0 +1,15 @@
+[Unit]
+Description=MicroMDM Server
+After=network.target
+
+[Service]
+EnvironmentFile=/usr/share/mobilutils/micromdm.env
+ExecStart=/usr/local/bin/micromdm serve -tls=true -server-url=${SERVER_URL} -api-key $API_TOKEN -tls-cert $MICROMDM_TLSCERT -tls-key $MICROMDM_TLSKEY -command-webhook-url $MICROMDM_WEBHOOK
+StandardOutput=append:/var/log/micromdm.log
+StandardError=append:/var/log/micromdm.log
+#Restart=never
+User=svcuser_micromdm
+Group=svcuser_micromdm
+
+[Install]
+WantedBy=multi-user.target
