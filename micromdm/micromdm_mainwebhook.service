@@ -1,0 +1,17 @@
+[Unit]
+Description=MicroMDMWebHook
+After=network.target
+
+[Service]
+EnvironmentFile=/usr/share/mobilutils/micromdm.env
+ExecStart=/usr/share/mobilutils/opendm-tools/micromdm/main_webhook.sh
+StandardOutput=append:/var/log/micromdm_mainwebhook.log
+StandardError=append:/var/log/micromdm_mainwebhook.log
+Restart=always
+User=svcuser_micromdm
+Group=svcuser_micromdm
+#User=root
+#Group=root
+
+[Install]
+WantedBy=multi-user.target

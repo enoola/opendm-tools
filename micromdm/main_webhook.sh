@@ -1,10 +1,14 @@
 #!/bin/bash
 
-MICROMDM_ENV_PATH="/usr/share/mobilutils/micromdm.env"
+#main script that trigger event send from micromdm, the so called "webhook"
+#it's basic
+
+MWORK_PATH="/usr/share/mobilutils"
+MICROMDM_ENV_PATH="${MWORK_PATH}/micromdm.env"
 source $MICROMDM_ENV_PATH
 
-ENROLL_HOOK="./hook_triggered_on_Enrollment.sh"
-CHECKOUT_HOOK="./hook_triggered_on_CheckOut.sh"
+ENROLL_HOOK="${MWORK_PATH}/opendm-tools/micromdm/hook_triggered_on_Enrollment.sh"
+CHECKOUT_HOOK="${MWORK_PATH}/opendm-tools/micromdm/hook_triggered_on_CheckOut.sh"
 
 nc -l 5000 -k | while true; do
     content_length=0
